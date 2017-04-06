@@ -1,0 +1,44 @@
+<!--pages/prepay/prepay.wxml-->
+<view class="page">
+
+    <image class="img" src="http:{{info.cover_img}}"></image>
+    <view class="wapper">
+        <view class="message">
+            <view class="message-h">
+                <image class="h-img" src="http:{{info.cover_img}}"></image>
+                <view class="h-con">
+                    <view class="h-con-name">{{info.name}}</view>
+                    <view class="h-con-list">导<text class="placeholder">ef</text>讲：{{info.producer}}</view>
+                    <view class="h-con-list">讲解点：{{info.view_num}}处</view>
+                    <view class="h-con-list">总时长：{{info.duration}}分钟</view>
+                </view>
+            </view>
+            <view class="message-b">
+                <view class="b-address">使用地点：{{info.location}}</view>
+                <view class="b-content">{{info.descn}}</view>
+            </view>
+            <view class="message-f">
+                <view class="f-title">
+                    <icon type="info"></icon>
+                    马上选个大师为您讲解吧~~
+                </view>
+                <view class="f-choose " >
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" range-key="name" >
+                        <view class="picker ">
+                            {{array[index].name}}
+                            <view class="icon"></view>
+                        </view>
+                    </picker>
+                </view>
+                <view class="f-price"  wx:if="{{audition == 0}}">
+                    本次讲解服务售价：￥{{array[index].total_fee /100}}
+                </view>
+            </view>
+        </view>
+        
+        <view class="pay">
+            <button type="primary" bindtap="navigateTo" wx:if="{{audition == 0}}">微信支付</button>
+            <button type="primary" bindtap="navigateToPlay" wx:if="{{audition == 1}}">播放</button>
+        </view>
+    </view>
+</view>

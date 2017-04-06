@@ -1,0 +1,106 @@
+/* pages/prepay/prepay.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.wapper{
+    
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /*right: 0rpx;
+    bottom: 0rpx;
+    margin:  auto;*/
+    /*top: 150rpx;
+    left: 70rpx;*/
+    width: 80%;
+    background: #fafafc;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+.message{
+    box-sizing: content-box;
+    padding: 20rpx;
+    
+}
+.message .message-h{
+    display: flex;
+    padding: 5rpx;
+   
+}
+.message .message-h .h-img{
+    width: 200rpx;
+    height: 200rpx;
+    margin-right: 13rpx;
+}
+.message .message-h .h-con-name{
+    font-weight: 400;
+     font-size: 20px;
+}
+.message .message-h .h-con-list{
+    font-size: 30rpx;
+    margin: 15rpx 0;
+}
+.message-b{
+    text-indent: 40rpx;
+    font-size: 30rpx;
+    color: #413d3d;
+    padding-bottom: 20rpx;
+     border-bottom: 1rpx solid #ececec;
+     line-height: 30rpx;
+}
+.b-address{
+    margin: 10rpx 0;
+}
+.b-content{
+    color: #413d3d;
+}
+.message-f{
+    text-align: center;
+    padding: 10rpx;
+}
+.message-f .f-title{
+   display: flex;
+   align-items: center;
+   font-size: 30rpx;
+  
+}
+.message-f .f-choose{
+    margin: 15rpx 0;
+    border: 1rpx solid #ececec;
+    width:400rpx;
+    margin-left: 100rpx;
+}
+.picker{
+    font-size: 30rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+}
+.message-f .f-price{
+    color: red;
+}
+/*.pay{
+    text-align: center;
+    background: #56bb37;
+    height: 100rpx;
+    line-height: 100rpx;
+    color: #e2ffe1;
+}*/
+.img{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+.icon {
+  display: inline-block;
+  border: 5px solid transparent;
+  border-top: 5px solid #000;
+  margin-left: 5px;
+}
+.placeholder{
+    width: 15rpx;
+    color: #fff;
+}

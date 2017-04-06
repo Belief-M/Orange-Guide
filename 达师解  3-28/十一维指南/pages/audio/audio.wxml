@@ -1,0 +1,27 @@
+<!--pages/audio/audio.wxml-->
+<view class="wapper">
+    <!--<image class="headerImg" src="../../images/1.png"></image>-->
+    <view class="body" >
+       <image  class="b-img" src="http:{{scenic_spot.cover_img}}"></image>
+        <image class="userimg" src="http:{{scenic_spot.cover_img}}"></image>
+        <view class="audio">
+            <view class="progress">
+                <view class="playName">{{name}}</view>
+                <text class="timer">{{currentTime}}/{{duration}}</text>
+                 <audio   src="{{src}}" id="myAudio" bindtimeupdate="timeupdate"  binderror="error" ></audio>
+            </view>
+            <view class="console">
+                <view hover="true" hover-class="imgBgChange"><image class="con-img" src="../../images/reset.png" bindtap="audioStart"></image></view>
+                <view hover="true" hover-class="imgBgChange"><image class="con-img" src="../../images/{{status=='start'?'start':'stop'}}.png"  bindtap="actionEvent"></image></view>
+                <!--<image class="con-img" src="../../images/start.png" wx:if="{{start}}" bindtap="audioPause"></image>-->
+                <view hover="true" hover-class="imgBgChange"><image class="con-img" src="../../images/caidan.png"  bindtap="chooseList"></image></view>
+                <view hover="true" hover-class="imgBgChange"><image class="con-img" src="../../images/yiwen.png" bindtap="helpAudio"></image></view>
+            </view>
+            <scroll-view class="audioList" wx:if="{{listToggle}}" scroll-y="true">
+                <block wx:for="{{view_spots}}" wx:key="index">
+                    <view id="{{item.id}}" data-actIndex="{{index}}" data-name="{{item.name}}" class="audioItem {{actindex==index?'activebg':''}}" hover="true" hover-class="active" bindtap="changePlace">{{item.name}}</view>
+                </block>
+            </scroll-view>
+        </view>
+    </view>
+</view>

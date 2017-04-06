@@ -1,0 +1,49 @@
+/* pages/index/index.wxss */
+.search{
+    border: 1px solid red;
+    height: 80rpx;
+    background: #f27f0c;
+}
+.search_con{
+    width: 90%;
+    height: 60rpx;
+    background: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30rpx;
+    vertical-align: middle;
+    line-height: 60rpx;
+    border-radius: 10rpx;
+}
+.search-icon{
+    margin-right: 10rpx;
+}
+.popular{
+    padding: 20rpx 20rpx;
+}
+.scroll{
+    margin: 20rpx;
+    height:380rpx;
+    display: flex;
+    white-space: nowrap; 
+   
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+image{
+    width: 260rpx;
+    height: 300rpx;
+    display: inline-block;
+}
+.scroll-con{
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+    border: 1rpx solid blue;
+    display: inline-block;
+}
+.name{
+    text-align: center;
+}

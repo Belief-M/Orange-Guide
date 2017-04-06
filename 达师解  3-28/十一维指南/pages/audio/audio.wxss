@@ -1,0 +1,85 @@
+/* pages/audio/audio.wxss */
+page{
+    height: 100%;
+   overflow: hidden;
+}
+.wapper{
+    height: 100%;
+    position: relative;
+}
+.body{
+    width: 100%;
+    height: 100%;
+}
+
+.b-img{
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+.userimg{
+    width: 600rpx;
+    height: 600rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 250rpx;
+    left: 80rpx;
+}
+.audio{
+    position: absolute;
+    bottom: 0rpx;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.progress{
+    padding: 20rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 50rpx;
+}
+
+.timer{
+    font-size: 35rpx;
+}
+.playName{
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    width: 480rpx;
+    
+    overflow: hidden;
+}
+.console{
+    display: flex;
+    justify-content: space-around;
+}
+.con-img{
+    width: 90rpx;
+    height: 80rpx;
+    padding: 20rpx 50rpx;
+    border-left:1px solid rgba(0,0,0,0.3);
+}
+.audioList{
+    height: 400rpx;
+    padding-top: 10rpx;
+    overflow: hidden;
+    color: #fff;
+    font-size: 50rpx;
+}
+.audioItem{
+    height: 100rpx;
+    padding-left: 30rpx;
+    line-height: 100rpx;
+}
+.active{
+    border: 0.01px solid #4F94CD;
+}
+.activebg{
+    background: rgba(255, 251, 240,0.3);
+}
+.imgBgChange{
+    background: rgba(0, 0, 0,0.4);
+}
+

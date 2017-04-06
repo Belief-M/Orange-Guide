@@ -1,0 +1,13 @@
+{
+    "pages": [
+      "pages/index/index"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#f27f0c",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "十一维攻略",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    }
+}

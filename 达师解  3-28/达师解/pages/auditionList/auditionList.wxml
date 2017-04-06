@@ -1,0 +1,20 @@
+<!--pages/auditionList/auditionList.wxml-->
+<view class="page">
+    <image class="bg_img" src="../../images/bg.jpeg"></image>
+    <view class="wapper">
+        <view class="audioList">
+            <block wx:for="{{view_spots}}" wx:key="index">
+                <!--<view id="{{item.id}}" bindtap="choosePlace">{{item.name}}</view>-->
+                <view id="{{item.id}}" data-actIndex="{{index}}" data-name="{{item.name}}" class="audioItem {{actindex==index?'activebg':''}}" hover="true" hover-class="active" bindtap="changePlace">{{item.name}}</view>
+            </block>
+        </view>
+        <view class="audio">
+            <audio  src="{{src}}" id="myAudio" bindtimeupdate="timeupdate" binderror="binderror"></audio>
+            
+            <view class="console">
+                <view hover="true" hover-class="imgBgChange"><image class="con-img" src="../../images/{{status=='start'?'start':'stop'}}.png"  bindtap="actionEvent"></image></view>
+                <text class="timer">{{currentTime}}/{{duration}}</text>
+            </view>
+        </view>
+    </view>
+</view>

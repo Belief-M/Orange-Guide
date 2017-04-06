@@ -1,0 +1,18 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/orderList/orderList",
+      "pages/prepay/prepay",
+      "pages/audio/audio",
+      "pages/auditionList/auditionList",
+      "pages/searchScenics/searchScenics"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#f27f0c",
+      "navigationBarTextStyle": "#fff",
+      "navigationBarTitleText": "达师解",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    }
+}

@@ -1,0 +1,60 @@
+<!--pages/index/index.wxml-->
+<view class="pages">
+    <view class="search">
+        <view class="search_con"><icon type="search" class="search-icon" size="13"></icon>找攻略</view>
+    </view>
+    <view class="body">
+        <view class="popular">
+            <view>推荐</view>
+            <scroll-view class="scroll" scroll-x="true">
+                
+                <block wx:for="{{popularList}}">
+                    <view class="scroll-con">
+                        <image src="{{item.src}}"></image>
+                        <view class="name">{{item.name}}</view>
+                    </view>
+                </block>
+                    
+            </scroll-view>
+        </view>
+        <view class="popular">
+            <view>推荐</view>
+            <scroll-view class="scroll" scroll-x="true">
+                
+                <block wx:for="{{popularList}}">
+                    <view class="scroll-con">
+                        <image src="{{item.src}}"></image>
+                        <view class="name">{{item.name}}</view>
+                    </view>
+                </block>
+                    
+            </scroll-view>
+        </view>
+        <view class="popular">
+            <view>推荐</view>
+            <scroll-view class="scroll" scroll-x="true">
+                
+                <block wx:for="{{popularList}}">
+                    <view class="scroll-con">
+                        <image src="{{item.src}}"></image>
+                        <view class="name">{{item.name}}</view>
+                    </view>
+                </block>
+                    
+            </scroll-view>
+        </view>
+        <view class="popular">
+            <view>推荐</view>
+            <scroll-view class="scroll" scroll-x="true">
+                
+                <block wx:for="{{popularList}}">
+                    <view class="scroll-con">
+                        <image src="{{item.src}}"></image>
+                        <view class="name">{{item.name}}</view>
+                    </view>
+                </block>
+                    
+            </scroll-view>
+        </view>
+    </view>
+</view>

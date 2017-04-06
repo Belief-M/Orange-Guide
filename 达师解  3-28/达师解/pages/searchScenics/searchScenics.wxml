@@ -1,0 +1,24 @@
+<!--pages/searchScenics/searchScenics.wxml-->
+
+<view class="wapper">
+    <view class="search">
+        <icon class="search-icon" type="search" size="23" bindtap="toSearch"></icon>
+        <input class="search-input" value="{{inputValue}}" type="text" placeholder="请输入关键字 查找：如：‘故宫’"  bindfocus="bindfocus" bindconfirm="bindconfirm" bindblur="bindblur"/>
+        <view class="cancel" bindtap="cancel" wx:if="{{haveFocus}}">取消</view>
+    </view>
+    <view class="body">
+        <view class="scenicsList">
+            <block wx:for="{{scenicsList}}" wx:if="{{!haveFocus}}"  wx:key="index">
+                <view class="scenicsList_item" bindtap="choosePlace" id="{{item.id}}">{{item.name}}</view>
+            </block>
+        </view>
+        <view class="searchList"  wx:if="{{haveFocus}}">
+            <block wx:for="{{searchList}}" wx:key="index">
+                <view class="scenic_spot" bindtap="choosePlace" id="{{item.id}}">
+                    <image class="scenic_img" src="http:{{item.cover_img}}"></image>
+                    <view class="scenic_name">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
