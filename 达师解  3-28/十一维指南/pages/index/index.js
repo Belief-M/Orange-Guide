@@ -6,10 +6,10 @@ Page({
     auditionPlaceList:[
       {'id':4,'cover_img':'https://img.jjdashi.com/scenic/4/bg.jpg','name':'北京动物园（试听）',audition:1},
       {'id':16,'cover_img':'https://img.jjdashi.com/scenic/16/bg.jpg','name':'长城（试听）',audition:1},
-      {'id':27,'cover_img':'https://img.jjdashi.com/scenic/27/bg.jpg','name':'庙会（试听）',audition:1},
+      {'id':27,'cover_img':'https://img.jjdashi.com/scenic/27/bg.jpg','name':'龙潭湖公园（试听）',audition:1},
        {'id':10,'cover_img':'https://img.jjdashi.com/scenic/10/bg.jpg','name':'胡同游南锣鼓巷（试听）',audition:1},
       {'id':13,'cover_img':'https://img.jjdashi.com/scenic/13/bg.jpg','name':'西湖（试听）',audition:1},
-      {'id':28,'cover_img':'https://img.jjdashi.com/scenic/28/bg.jpg','name':'卢浮宫创想（试听）',audition:1},
+      {'id':46,'cover_img':'https://img.jjdashi.com/scenic/46/bg.jpg','name':'国家博物馆-大英展（试听）',audition:1},
      
     ],
     audition:false

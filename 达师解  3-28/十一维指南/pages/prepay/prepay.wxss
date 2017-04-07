@@ -38,7 +38,7 @@ page{
 }
 .message .message-h .h-con-name{
     font-weight: 400;
-     font-size: 20px;
+     font-size: 40rpx;
 }
 .message .message-h .h-con-list{
     font-size: 30rpx;

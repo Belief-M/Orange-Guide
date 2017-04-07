@@ -1,7 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="page">
     <view class="header">
-        <image class="header-img" mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1487240948410&di=dec83e8da87f14b1bc21c2b8c0688ee8&imgtype=0&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1603%2F700-160330163035D5.jpg"></image>
+        <image class="header-img" mode="aspectFit" src="https://www.jjdashi.com/app/list/images/bgImg1.jpg"></image>
         <view class="search" bindtap="goToSearch">
                 <text class="header-input">请输入关键字进行查找：例如：'故宫'</text>
                 <!--<input type="text" class="header-input" placeholder="请输入关键字：例如：'故宫' " disabled />-->
